@@ -34,13 +34,15 @@ footer {
     max-width: 382px;
     height: 582px;
     background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
-    background-size: cover;
     background-position: center;
+    background-size: 422px 602px;
+    background-repeat: no-repeat;
+    background-position-y: top;
 }
 
 .ip-image img {
-margin-left: 94px;
-margin-top: 24px;
+    margin-left: 94px;
+    margin-top: 24px;
 }
 
 .box {
@@ -54,15 +56,23 @@ margin-top: 24px;
 
 section .first-box{
     width: 100%;
-    height: 64%;
-    background-color: rgb(255, 255, 255)
+    height: 70%;
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(219,219,219,1);
 }
 
-section .second-box{
+section .second-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(38,38,38,1);
     width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
-    background-color: rgb(255, 255, 255)
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(219,219,219,1);
 }
 
 
@@ -74,7 +84,7 @@ section .second-box{
 }
 
 .info-input {
-    margin-top: 24px;
+    margin-top: 30px;
     row-gap: 6px;
     display: flex;
     flex-direction: column;
@@ -84,36 +94,55 @@ section .second-box{
 
 input {
     height: 40px;
-    width: 280px;
+    width: 258px;
     padding: 9px;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    border: 0.5px solid rgb(38,38,38);
 }
 
-button {
-    width: 280px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-weight: bolder;
-    background-color: rgba(0, 149,256, 0.3)
-}
-
-.down-part {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+input:focus {
+    border: 0.5px solid rgb(38,38,38);
 }
 
 .login-button {
-    margin-top: 12px;
+    margin: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.login-button button {
+    width: 258px;
+    height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: bolder;
+    background-color: rgba(0, 149,256, 0.3);
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+
 .straight-line {
     margin-top: 6px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    height: 50px;
+}
+
+.straight-line h3 {
+    display: inline-block;
+    width: 24px;
+    font-size: 13px;
+}
+
+hr {
+    display: inline-block;
+    width: 30%;
+    border: none;
+    border-top: 1px solid;
+    font-size: 8px;
 }
 
 .fb-login {
@@ -122,24 +151,41 @@ button {
     justify-content: center;
     align-items: center; 
     column-gap: 6px;
+    font-size: 14px;
 }
+
+.no-underline a {
+    text-decoration: none;
+}
+
+.fb-login a:visited {
+    color: #385185;
+}
+
 
 .forget-account {
     margin-top: 12px;
     display: flex;
     justify-content: center;
     align-items: center; 
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1px;
 }
 
-.second-box {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.forget-account a:visited {
+    color: rgba(0,55,107,1);
+}
+
+.second-box a:visited{
+    color: rgba(0,149,246,1);
 }
 
 .box h3 {
     text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
 }
 
 .third-box {
@@ -147,4 +193,12 @@ button {
     justify-content: center;
     align-items: center; 
     column-gap: 10px;
+    color: rgba(38,38,38,1);
+}
+
+.down-part {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
