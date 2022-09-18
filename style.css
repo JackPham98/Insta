@@ -35,7 +35,7 @@ footer {
     height: 582px;
     background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
     background-size: cover;
-    background-position: right;
+    background-position: center;
 }
 
 .ip-image img {
