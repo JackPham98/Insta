@@ -102,6 +102,7 @@ input {
 
 .info-input input:focus {
     border: 0.5px solid rgb(219,219,219);
+    outline: rgb(133,133,133) solid 0.2px;
 }
 
 .login-button {
